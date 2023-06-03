@@ -1,0 +1,247 @@
+/* ===== EVERYTHING ===== */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* ===== BACKGROUND IMAGE ===== */
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(binary.jpeg);
+    background-attachment: fixed;   
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;   
+    
+}
+
+/* ===== NAVIGATION BAR ===== */
+nav img{
+    width: 75px;
+    
+}
+#text{
+    height: 33px;
+    margin: -56px 85px;
+    position: absolute;
+    font-size: larger;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    display: inline-block;
+
+}
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(4, 9, 30, 0.7);
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items:center;
+}
+.navbar ul{
+    margin: 0;
+    padding: 0; 
+    list-style: none;
+   display: flex;
+    justify-content: flex-end;
+    
+} 
+
+.navbar{
+    flex: 1;
+    text-align: right;
+    padding: 5px 10px;
+    overflow:hidden;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block ;
+    margin:10px;
+    padding: 8px 5px;
+    background-color: rgba(0,0,0,0.2);
+    position: relative;
+}
+
+
+.navbar ul li a:hover{
+    color: rgb(255, 135, 135);
+    cursor:pointer;
+}
+.navbar ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(255, 135, 135);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+#text::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(255, 135, 135);
+    display: block;
+    margin: auto;
+    transition: 0.8s;
+}
+#text:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 63px;
+}
+.text-box p{
+    margin:14px 0px 40px;
+    font-size: 20px;
+}
+.textbtn{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+ .textbtn:hover{
+    border: 1px solid white;
+    background: rgb(254, 160, 160);
+    transition:1.5s;
+ }
+ .one img{
+    width:50px ;
+    border-radius: 50%;
+    animation: one 6s linear infinite ;
+}
+.one{
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    position: absolute;
+    top:-68px;
+}
+
+@keyframes one{
+    0%{
+        transform: translateY(0vh);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(80vh);
+        opacity: 0;
+    }
+    
+}
+
+.one img:nth-child(1){
+    animation-delay: 2s;
+}
+.one img:nth-child(2){
+    animation-delay: 1s;
+}
+.one img:nth-child(3){
+    animation-delay: 3s;
+}
+.one img:nth-child(4){
+    animation-delay: 2.4s;
+}
+.one img:nth-child(5){
+    animation-delay: 7s;
+}
+.one img:nth-child(6){
+    animation-delay: 6s;
+}
+.one img:nth-child(7){
+    animation-delay: 2.5s;
+}
+.one img:nth-child(8){
+    animation-delay: 4.5s;
+}
+
+.intro{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+ }
+
+ .intro h1{
+    font-size: 40px;
+    font-weight: 600;
+ }
+
+ .intro h3{
+    font-size: 40px;
+    font-weight: 600;
+ }
+
+ .intro p{
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+ }
+
+ .uses{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .row{
+    flex-basis: 31%;
+    background-color: #d4f8e8;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 50px 12px;
+    box-sizing: border-box;
+    transition: 1fs;
+    
+}
+
+ .row:hover{
+    box-shadow: 0 0 25px 0px rgba(0,0,0,0.2);
+    cursor: pointer;
+ }
+
+ .row a{
+    color: black;
+ }
+

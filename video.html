@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Compression</title>
+  <style>
+    #video-preview {
+      width: 400px;
+      height: 300px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+  </style>
+  <link rel="stylesheet" href="video.css">
+</head>
+<body>
+  <h1>Video Compression</h1>
+  <input type="file" id="video-input" accept="video/*">
+  <br>
+  <video id="video-preview" controls></video>
+  <a id="download-link" href="#" download>Download Compressed Video</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
